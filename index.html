@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urban Problems Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007acc;
+        }
+        h2 {
+            color: #005b99;
+        }
+        h3 {
+            color: #004080;
+        }
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #005b99;
+        }
+        .answer {
+            display: none;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid #007acc;
+            background-color: #e6f2ff;
+        }
+    </style>
+    <script>
+        function showAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Urban Problems Quiz</h1>
+    
+    <div>
+        <h2>1. What are the urban problems in Hong Kong?</h2>
+        
+        <h3>Housing Problems</h3>
+        <p>Question: What are two main issues contributing to housing problems in Hong Kong?</p>
+        <button onclick="showAnswer('answer1')">Show Answer</button>
+        <p id="answer1" class="answer">Shortage of housing and poor living environment.</p>
+
+        <p>Question: Explain why there is a shortage of housing in Hong Kong.</p>
+        <button onclick="showAnswer('answer2')">Show Answer</button>
+        <p id="answer2" class="answer">There is not enough housing, private housing is expensive, and the supply of public housing is insufficient to meet the needs.</p>
+        
+        <h3>Traffic Congestion</h3>
+        <p>Question: List two common locations where traffic congestion occurs in Hong Kong.</p>
+        <button onclick="showAnswer('answer3')">Show Answer</button>
+        <p id="answer3" class="answer">Central Business District (CBD) and old urban areas.</p>
+
+        <p>Question: When is traffic congestion most common, and what impact does it have?</p>
+        <button onclick="showAnswer('answer4')">Show Answer</button>
+        <p id="answer4" class="answer">Traffic congestion is most common during peak hours, causing inconvenience.</p>
+        
+        <h3>Environmental Pollution</h3>
+        <p>Question: Identify and briefly describe four types of pollution affecting Hong Kong.</p>
+        <button onclick="showAnswer('answer5')">Show Answer</button>
+        <p id="answer5" class="answer">Air pollution, land/solid waste pollution, water pollution, and noise pollution.</p>
+
+        <p>Question: What are the major sources of air pollution in Hong Kong?</p>
+        <button onclick="showAnswer('answer6')">Show Answer</button>
+        <p id="answer6" class="answer">Major sources of pollutants are cars and power plants.</p>
+        
+        <h3>Urban Decay</h3>
+        <p>Question: Define urban decay in the context of Hong Kong's old urban areas.</p>
+        <button onclick="showAnswer('answer7')">Show Answer</button>
+        <p id="answer7" class="answer">Urban decay refers to the worsening of urban environments in areas that were developed the earliest, where buildings are old and poorly maintained.</p>
+
+        <p>Question: What are two problems associated with urban decay in these areas?</p>
+        <button onclick="showAnswer('answer8')">Show Answer</button>
+        <p id="answer8" class="answer">Land use conflict and old, worn-out buildings.</p>
+        
+        <h3>Causes of Urban Problems</h3>
+        <p>Question: How has population increase contributed to urban problems in Hong Kong?</p>
+        <button onclick="showAnswer('answer9')">Show Answer</button>
+        <p id="answer9" class="answer">It creates heavy demand for land, housing, transport, and other resources, leading to issues such as traffic congestion and environmental pollution.</p>
+
+        <p>Question: Give an example of how poor urban planning has led to specific issues.</p>
+        <button onclick="showAnswer('answer10')">Show Answer</button>
+        <p id="answer10" class="answer">Roads in urban areas are narrow due to a failure to predict the growth of population and the number of cars, leading to traffic congestion and land use conflict problems.</p>
+        
+        <h3>Tackling Housing Problems</h3>
+        <p>Question: What is the purpose of building new towns and new development areas?</p>
+        <button onclick="showAnswer('answer11')">Show Answer</button>
+        <p id="answer11" class="answer">To increase housing supply and provide well-planned communities with private and public housing, open spaces, and various facilities.</p>
+
+        <p>Question: Describe how urban renewal can address housing problems.</p>
+        <button onclick="showAnswer('answer12')">Show Answer</button>
+        <p id="answer12" class="answer">Urban renewal projects redevelop, rehabilitate, preserve, and revitalize old areas to provide more housing and improve living standards.</p>
+        
+        <h3>Reducing Traffic Congestion</h3>
+        <p>Question: How does expanding the railway network help alleviate traffic congestion?</p>
+        <button onclick="showAnswer('answer13')">Show Answer</button>
+        <p id="answer13" class="answer">It is efficient at carrying many people and is environmentally friendly, forming the backbone of Hong Kong's public transport system.</p>
+
+        <p>Question: What strategies are used to control the number of cars on the road?</p>
+        <button onclick="showAnswer('answer14')">Show Answer</button>
+        <p id="answer14" class="answer">Raising the first registration tax and annual license fee for private cars, improving bus routes, and offering park-and-ride discounts.</p>
+        
+        <h3>Reducing Pollution Problems</h3>
+        <p>Question: What measures are being taken to reduce air pollution from road traffic and power supply?</p>
+        <button onclick="showAnswer('answer15')">Show Answer</button>
+        <p id="answer15" class="answer">Phasing out diesel cars, subsidizing the purchase of electric buses, using less coal, and developing renewable energy sources.</p>
+
+        <p>Question: How is Hong Kong addressing land pollution and waste management?</p>
+        <button onclick="showAnswer('answer16')">Show Answer</button>
+        <p id="answer16" class="answer">Implementing the waste charging scheme, expanding landfills, and setting up incinerators.</p>
+        
+        <h3>Urban Redevelopment and Rehabilitation</h3>
+        <p>Question: What is the difference between urban redevelopment and building rehabilitation?</p>
+        <button onclick="showAnswer('answer17')">Show Answer</button>
+        <p id="answer17" class="answer">Urban redevelopment involves pulling down old buildings and replacing them with modern structures, while building rehabilitation involves maintenance and upgrading facilities to slow down aging.</p>
+
+        <p>Question: Provide an example of heritage preservation and revitalization in Hong Kong.</p>
+        <button onclick="showAnswer('answer18')">Show Answer</button>
+        <p id="answer18" class="answer">The Central Police Station has been revitalized and transformed into Tai Kwun, mainly used for cultural events.</p>
+        
+        <h3>Understanding Urban Issues</h3>
+        <p>Question: Explain how rapid economic development has led to urban problems.</p>
+        <button onclick="showAnswer('answer19')">Show Answer</button>
+        <p id="answer19" class="answer">It has increased the standard of living, leading to more people affording cars and increased consumption, causing traffic congestion and land pollution.</p>
+
+        <p>Question: Why is it important to tackle urban problems in Hong Kong?</p>
+        <button onclick="showAnswer('answer20')">Show Answer</button>
+        <p id="answer20" class="answer">To improve the living environment, ensure sustainable development, and enhance the quality of life for residents.</p>
+    </div>
+</body>
+</html>
